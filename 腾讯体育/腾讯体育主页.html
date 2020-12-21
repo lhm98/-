@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0px;
+				margin: 0px;
+			}
+			li{
+				list-style: none;
+			}
+			header{
+				height: 170px;
+			/*	background: darksalmon;*/
+				
+			}
+			header>div{
+				margin: auto;
+				width: 1240px;
+				height: 60px;
+			}
+			header>div>.headleft>li{
+				
+				float: left;
+				
+			}
+			a{
+				text-decoration: none;
+				width: 100%;
+				height: 100%;
+			}
+			.topa{
+				color: #999999;
+			}
+			header>div>.headright{
+				
+				float: right;
+			}
+			header>div>.headright>li{
+				float: left;
+			}
+			header>div>.headright>.vip{
+				text-align: center;
+				line-height: 36px;
+				background: #F6F4ED;
+				border-radius:2% ;
+				margin-right: 25px;
+			}
+			header>div>.headright>.vip:hover{
+				background: rgb(230,230,230);
+			}
+			header>div>.headright>.login{
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+				background: rgb(80,100,250);
+				margin-top: 13px;
+				line-height: 50px;
+				text-align: center;
+				color: white;
+				font-size: 14px;
+				position: relative;
+			}
+			header>div>.headright>.login>a{
+				font-size: 12px;
+				color: white;
+				
+			}
+			header>div>.headright>.login:hover>div{
+				display: block;
+			}
+			header>div>.headright>.login>div{
+				width: 330px;
+				height: 60px;
+				background: white;
+				color: black;
+				border: 1px solid silver;
+				position: absolute;
+				left: -280px;
+				line-height: 60px;
+				margin-top: 5px;
+				display: none;
+			}
+			header>div>.headright>.login>div>.in{
+				float: right;
+			}
+			header>div>.headright>.login>div>.in>a{
+				float: right;
+				margin-top: 15px;
+				background: #e0ad14;
+				line-height: 30px;
+				width: 70px;
+				height: 30px;
+				border-radius:30px 30px 30px 30px ;
+				margin-right: 20px;
+				color: white;
+			}
+			.sanjiao{
+				position: absolute;
+				top: -10px;
+				right: 22px;
+				width:0px;
+				height:0px;
+				border: 1px solid;
+				border-top:5px solid transparent;
+				border-bottom:5px solid white;
+				border-left:5px solid transparent;
+				border-right:5px solid transparent;
+			}
+			header>.ad{
+				/*background: sandybrown;*/
+				margin: auto;
+				margin-top: 10px;
+				height: 90px;
+			}
+			header>.ad>a{
+				float: left;
+			}
+			header>.ad>div{
+				/*background: bisque;*/
+				height: 90px;
+				width: 230px;
+				float: right;
+				border: 1px solid #F6F4ED;
+				
+			}
+			header>.ad>div>.headerimg{
+				margin-top: 5px;
+				margin-left: 8px;
+				height: 80px;
+				width: 80px;
+				float: left;
+			}
+			header>.ad>div>.weixin{
+				float: right;
+				width: 120px;
+			/*	background: saddlebrown;*/
+				height: 70px;
+				margin-top:11px ;
+				margin-right: 5px;
+			}
+			header>.ad>div>.weixin>.a{
+				font-size: 14px;
+				font-weight:bold ;
+				color:#999999;
+			}
+			header>.ad>div>.weixin>.b{
+				margin-top: 8px;
+				font-size: 12px;
+				color:#999999;
+			}
+			.blue{
+				background: #408ed6;
+				width: 100%;
+				height: 80px;
+				
+			}
+			.blue>.nav{
+				width: 1240px;
+				height: 80px;
+				margin: auto;
+				
+			}
+			.blue>.nav>.navleft{
+				width: 181px;
+				height: 80px;
+				float: left;
+			}
+			.blue>.nav>.navleft>p{
+				margin-top: 15px;
+			}
+			.blue>.nav>.navleft>p>a{
+				margin-right: 15px;
+				color: white;
+				font-size: 14px;
+				padding: 4px;
+			}
+			.blue>.nav>.navleft>p>a:hover{
+				background: #327fc6;
+				color: gold;
+			}
+			.TVB_bolick{
+				width: 100%;
+				height: 50px;
+				background: #1475ba;
+				display: none;
+				position: absolute;
+				z-index: 2;
+			}
+			.TVB_bolick>div{
+				margin: auto;
+				position: relative;
+				width: 1240px;
+				height: 50px;
+			}
+			.TVB_bolick>div>li{
+				float: left;
+				margin-top:15px ;
+				margin-right: 22px;
+				
+			}
+			.TVB_bolick>div>li>a{
+				color: #9dd9ff;
+				font-size: 14px;
+				
+			}
+			.bluesanjiao{
+				position: absolute;
+				top: -14px;
+				left: 1%;
+				width:0px;
+				height:0px;
+				border-top:7px solid transparent;
+				border-bottom:7px solid #1475ba;
+				border-left:7px solid transparent;
+				border-right:7px solid transparent;
+			}
+			
+			.TVB_bolick>div>li>a:hover{
+				color: #ebd551;
+			}
+			.space{
+				margin-top: 20px;
+				width: 0px;
+				height: 40px;
+				float: left;
+				border-left: 1px solid silver;
+				margin-left: 20px;
+				margin-right: 20px;
+			}
+			.blue>.nav>div>p{
+				margin-top: 15px;
+			}
+			.blue>.nav>div>p>strong>a{
+				margin-right: 15px;
+				color: white;
+				font-size: 14px;
+				padding: 4px;
+			}
+			.blue>.nav>div>p>strong>a:hover{
+				background: #327fc6;
+				color: gold;
+			}
+			.blue>.nav>div>p>a{
+				margin-right: 15px;
+				color: white;
+				font-size: 14px;
+				padding: 4px;
+			}
+			.blue>.nav>div>p>a:hover{
+				background:#327fc6;
+				color: gold;
+			}
+			.blue>.nav>.navleftA{
+				width: 264px;
+				height: 80px;
+				float: left;
+			}
+			.blue>.nav>.navright{
+				width: 205px;
+				height: 80px;
+				float: left;
+			}
+			.blue>.nav>.navrightA{
+				width: 370px;
+				height: 80px;
+				float: left;
+			}
+			.game{
+				width: 100%;
+				height: 120px;
+				/*background: salmon;*/
+				margin-top: 20px;
+			}
+			.game>.game_body{
+				width: 1240px;
+				height: 122px;
+				margin: auto;
+				/*background: silver;*/
+				position: relative;
+			}
+			.game>.game_body>a{
+				padding: 41px 0px;
+				background: #DCDCDC;
+				font-size: 28px;
+				color: white;
+				position: absolute;
+				top:0px;
+				width: 20px;
+				height: 40px;
+				z-index: 0;
+			}
+			.game>.game_body>a:hover{
+				background:#408ed6 ;
+			}
+			.game>.game_body>.over{
+				/*background: rosybrown;*/
+				width:1060px;
+				height: 122px;
+				overflow: hidden;
+				margin-left: 20px;
+				float: left;
+			}
+			.game>.game_body>.over>.big{
+				width: 3240px;
+				height: 120px;
+				/*background: darksalmon;*/
+			}
+			.game>.game_body>.over>.big>.playback{
+				width: 200px;
+				height: 117px;
+				float: left;
+				border-top: 3px solid  #408ED6;
+				/*background: sandybrown;*/
+				margin-left: 10px;
+				border-left:1px solid #DCDCDC ;
+				border-right:1px solid #DCDCDC ;
+				border-bottom:1px solid #DCDCDC ;
+			}
+			.game>.game_body>.over>.big>.playback>a>ul{
+				width: 176px;
+				height: 84px;
+				background: #FAFAFA;
+				padding: 0px 12px;
+			}
+			.game>.game_body>.over>.big>.playback>a>ul>.first{
+				font-size: 12px;
+				padding: 9px 0px 2px;
+				position: relative;
+				margin-top: 0px;
+				height:15px;
+				
+			}
+			.game>.game_body>.over>.big>.playback>a>ul>.first>strong{
+				position: absolute;
+				left: 0px;
+			}
+			.game>.game_body>.over>.big>.playback>a>ul>.first>span{
+				color: #999999;
+				position: absolute;
+				right: 0px;
+			}
+			.game>.game_body>.over>.big>.playback>a>ul>li{
+				margin-top:4px ;
+				font-size: 14px;
+				color: #393939;
+				text-align: center;
+			}
+			.game>.game_body>.over>.big>.playback>div{
+				background: white;
+				height: 33px;
+				width: 200px;
+				position: relative;
+			}
+			.game>.game_body>.over>.big>.playback>div>a{
+				font-size: 12px;
+				position: absolute;
+				top: 8px;
+				left: 42%;
+				width: 30px;
+				height: 17px;
+			}
+			.game>.game_body>.over>.big>.playback>div>a:hover{
+				color: #F15B5B;
+			}
+			.game>.game_body>.game_img{
+				width: 110px;
+				height: 120px;
+				float: left;
+				margin-left: 10px;
+				/*background: saddlebrown;*/
+			}
+			.game>.game_body>.game_img>div{
+				width: 110px;
+				height: 35px;
+				border: 1px solid #DCDCDC;
+				padding: 12px 0px;
+			}
+			.game>.game_body>.game_img>div:hover{
+			background: #FAFAFA;
+			}
+			.game>.game_body>.game_img>div>a{
+				padding: 25px 0px 12px;
+			}
+			.middle{
+				width: 100%;
+				height: 1500px;
+				background: sandybrown;
+				margin-top: 30px;
+			}
+			.middle>.middle_body{
+				width: 1240px;
+				height: 720px;
+				margin: auto;
+				/*background: darkcyan;*/
+			}
+			.middle>.middle_body>.text{
+				width: 510px;
+				height: 720px;
+				float: left;
+				/*background: white;*/
+			}
+			.middle>.middle_body>.text>ul>li{
+				width: 510px;
+				padding: 6px 0px;
+			}
+			.middle>.middle_body>.text>ul>li>a{
+				color: #081626;
+				font-size: 16px;
+			}
+			.middle>.middle_body>.text>ul>li>a:hover{
+				color: rgb(241,50,50);
+			}
+			.middle>.middle_body>.text>ul>li>.bold{
+				font-size:20px ;
+				font-weight: bold;
+				padding: 15px 0px;
+			}
+			.middle>.middle_body>.middle_bodyright{
+				width: 730px;
+				height: 720px;
+				background: darkturquoise;
+				float: right;
+			}
+			.middle>.middle_body>.middle_bodyright>.chart{
+				width: 730px;
+				height: 350px;
+				/*background: mediumseagreen;*/
+			}
+			.middle>.middle_body>.middle_bodyright>.chart>.rotation_chart{
+				width: 528px;
+				height: 348px;
+				/*background:firebrick;*/
+				position: relative;
+				overflow: hidden;
+				float: left;
+			}
+			.middle>.middle_body>.middle_bodyright>.chart>.rotation_chart>.move{
+				width: 2112px;
+				height: 348px;
+			}
+			.middle>.middle_body>.middle_bodyright>.chart>.rotation_chart>.move>li{
+				float: left;
+				width: 528px;
+				height: 348px;
+				position: relative;
+			}
+			.middle>.middle_body>.middle_bodyright>.chart>.rotation_chart>.move>li>a>span{
+				color: white;
+				font-size: 18px;
+				position: absolute;
+				bottom: 25px;
+				left: 12px;
+			}
+			.middle>.middle_body>.middle_bodyright>.chart>.rotation_chart>.point{
+				width: 80px;
+				height: 20px;
+				position: absolute;
+				bottom: 12px;
+				right: 0px;
+			}
+			.middle>.middle_body>.middle_bodyright>.chart>.rotation_chart>.point>li{
+				width: 8px;
+				height: 8px;
+				border-radius: 50%;
+				margin-right: 10px;
+				background: white;	
+				float: left;
+			}
+			.middle>.middle_body>.middle_bodyright>.chart>.rotation_chart>#leftB{
+				position: absolute;
+				left: 0px;
+				top:50%;
+				bottom: 50%;
+				z-index: 2;
+			}
+			.middle>.middle_body>.middle_bodyright>.chart>.rotation_chart>#rightB{
+				position: absolute;
+				right: 0px;
+				top:50%;
+				bottom: 50%;
+				z-index: 2;
+			}
+			.middle>.middle_body>.middle_bodyright>.chart>.rotation_chart>div>a{
+				color: white;
+				background: rgba(0,0,0,0.6);
+				font-size: 40px;
+			}
+			.middle>.middle_body>.middle_bodyright>.chart>.rotation_chart>div>a:hover{
+				background: rgba(0,0,0,0.8);
+			}
+			.middle>.middle_body>.middle_bodyright>.chart>.hot{
+				background: url(img/m1.png) no-repeat 0px 0px;
+				width: 198px;
+				height: 187px;
+				background-size:cover;
+				float: right;
+			}
+			.middle>.middle_body>.middle_bodyright>.chart>.hot>.hot_body{
+				margin-top: 73px;
+				margin-left: 11px;
+			}
+			.middle>.middle_body>.middle_bodyright>.chart>.video{
+				width: 198px;
+				height: 161px;
+				float: right;
+				background: #327FC6;
+			}
+			.pip{
+				width: 360px;
+				height: 305px;
+				background: #3580C5;
+				position: fixed;
+				bottom: 0px;
+				right: 0px;
+			}
+			.pip>div>p{
+				width: 360px;
+				height: 40px;
+				text-align: center;
+				font-size: 20px;
+				color: white;
+			}
+			.pip>div>p>a>strong{
+				font-size: 30px;
+				color: white;
+			}
+			.middle_bodyright_bottom{
+				width: 730px;
+				height: 320px;
+				background: #9DD9FF;
+				margin-top: 30px;
+			}
+			.middle_bodyright_bottom>.good{
+				width: 730px;
+				height: 38px;
+				border-bottom: 1px solid silver;
+			}
+			.middle_bodyright_bottom>.good>h4{
+				border-left:5px solid #327FC6 ;
+				padding: 0px 15px;
+				font-size: 24px;
+				font-weight: 400;
+				float: left;
+				margin-right: 20px;
+			}
+			.middle_bodyright_bottom>.good>div{
+				padding: 8px 0px;
+			}
+			.middle_bodyright_bottom>.good>div>a{
+				color: #666666;
+				font-size: 16px;
+				padding: 0px 9px;
+			}
+		</style>
+		<script src="js/jquery-3.5.1.js"></script>
+	</head>
+	<body>
+		<header>
+			<div>
+				<ul class="headleft">
+					<li><img src="//mat1.gtimg.com/sports/sports/3.png"/></li>
+					<li style="margin-top: 25px;font-size: 12px;"><a href="" class="topa">腾讯体育</a>
+						<span>|</span>
+						<a href="" class="topa">网站地图</a>
+					</li>
+				</ul>
+				<ul class="headright">
+					<li class="vip" style="width: 136px;height: 36px;margin-top: 20px;"><a href="" style="color: #BB8F09;width: 100%;height: 100%;">👑腾讯体育会员</a></li>
+					<li class="login"><a href="">登录</a>
+						<div >
+							登录后可观看更多精彩比赛  <div class="sanjiao"></div>
+							<div class="in"><a href="">登录</a></div>
+					</div></li>
+				</ul>
+			</div>
+			<div class="ad">
+				<a href="http://c.l.qq.com/click?oid=352861917&amp;cid=441538482&amp;click_data=EAAoADDTiQI6AEAbWhAwNUJFRkQwQjIzOTU5QTBD_viewid_Oj!voBWNvlA3v2tCezdoQc8mxInZBVApTvGTC8_qu_DCxy!HVf85FIiV1UpeNHXcsfgM9KoqF1wRh6ei3hu4fig5GtFokLEDjXpS1o6qFQuqMUblCNDHmgSMZ5T6Adcs&amp;adtype=&amp;appversion=0&amp;contract=2&amp;jtype=0&amp;i=1&amp;os=0&amp;s_lp=101&amp;acttype=__ACT_TYPE__&amp;ch=__CHANNEL_ID__&amp;seq=__SEQ__&amp;aseq=__ABS_SEQ__&amp;rt=__RETURN_TYPE__&amp;s=%7B%22da%22%3A%22__WIDTH__%22%2C%22db%22%3A%22__HEIGHT__%22%2C%22down_x%22%3A%22__DOWN_X__%22%2C%22down_y%22%3A%22__DOWN_Y__%22%2C%22up_x%22%3A%22__UP_X__%22%2C%22up_y%22%3A%22__UP_Y__%22%7D&amp;clklpp=__CLICK_LPP__&amp;xp=2&amp;cm2expid=34003&amp;cm2traceid=&amp;vto=__VIDEO_PLAY_TIME__" target="_blank" style="display:block;cursor:pointer;width:1000px;height:90px;background-image:url(//pgdt.gtimg.cn/gdt/0/EAAoP0LAPoABaAAAIimBf0eLeDkXhFYat.jpg/0?ck=a9b28cba15dc78b85250bac64afdaf20);background-size:1000px 90px;background-position:50% 50%;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//pgdt.gtimg.cn/gdt/0/EAAoP0LAPoABaAAAIimBf0eLeDkXhFYat.jpg/0?ck=a9b28cba15dc78b85250bac64afdaf20',sizingMethod='scale');"></a>			
+			<div >
+				<div class="headerimg" >
+					<img src="//mat1.gtimg.com/sports/index2015/images/pingtai.jpg"/>
+				</div>
+				<div class="weixin" >
+					<p class="a">腾讯体育微信账号</p>
+					<p class="b">吐槽版的新闻体育，&emsp;直播信息早知道</p>	
+					
+				</div>
+			</div>
+			</div>
+			
+		</header>
+		<div class="blue">
+			<div class="nav">
+				<div class="navleft" style="margin-left: 0px;">
+					<p><a href="">滚动</a><a href="">直播</a><a href="">企鹅直播</a></p>
+					<p style="margin-top: 8px;"><a href="" class="TVB">视频</a><a href="">电竞视频</a><a href="">社区</a></p>
+				</div>
+				<div class="space">
+				</div>
+				<div class="navleftA">
+					<p>
+						<strong><a href="">NBA</a></strong>
+						<a href="">ESPN</a><a href="">点播</a><a href="">红旗企鹅跑</a>
+					</p>
+					<p style="margin-top: 8px;">
+						<strong><a href="">CBA</a></strong>
+						<a href="">超新星运动会</a>
+					</p>
+				</div>
+				<div class="space">
+				</div>
+				<div class="navright">
+					<p>
+						<a href="">英超</a><a href="">西甲</a><a href="">德甲</a><a href="">意甲</a>
+					</p>
+					<p style="margin-top: 8px;">
+					<a href="">欧冠</a><a href="">中超</a><a href="">亚冠</a><a href="">国足</a>
+					</p>
+				</div>
+				<div class="space">
+				</div>
+				<div class="navrightA">
+					<p>
+						<strong><a href="">综合</a></strong><a href="">网球</a><a href="">排球</a><a href="">NFL</a><a href="">WUCL</a><a href="">搏击</a><a href="">冰雪</a>
+					</p>
+					<p style="margin-top: 8px;">
+						<a href="">S10</a><a href="">KPL</a><a href="">F1</a><a href="">NHL</a><a href="">跑步</a><a href="">法网中文官网</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<ul class="TVB_bolick">
+			<div class="">
+			<div class="bluesanjiao"></div>
+				<li><a href="">NBA</a></li>
+				<li><a href="">TOP时刻</a></li>
+				<li><a href="">全场回放</a></li>
+				<li><a href="">视屏库</a></li>
+				<li><a href="">比赛库</a></li>
+				<li><a href="">全景NBA</a></li>
+				<li><a href="">绝对经典</a></li>
+				<li><a href="">长暂停</a></li>
+				<li><a href="">有求必应</a></li>
+				<li><a href="">就是l</a></li>
+				<li><a href="">看球听歌</a></li>
+			</div>
+		</ul>
+		<div class="game">
+			<div class="game_body">
+				<a href="" class="left"><</a>
+					<div class="over">
+					<div class="big">
+						
+	
+				<div class="playback" >
+				<a href=""><ul>
+					<li class="first"><strong>LPL</strong><span>已结束</span></li>
+					<li style="margin-bottom:5px ;">2020英雄联盟全明星赛</li>
+					<li style="color: #999999;">12月20日   12：00</li>
+				</ul></a>
+				<div >
+					<a href="">回放</a>
+				</div>
+				</div>
+				<div class="playback" >
+				<a href=""><ul>
+					<li class="first"><strong>LPL</strong><span>已结束</span></li>
+					<li style="margin-bottom:5px ;">2020英雄联盟全明星赛</li>
+					<li style="color: #999999;">12月20日   12：00</li>
+				</ul></a>
+				<div >
+					<a href="">回放</a>
+				</div>
+			</div>
+			
+			<div class="playback" >
+				<a href=""><ul>
+					<li class="first"><strong>LPL</strong><span>已结束</span></li>
+					<li style="margin-bottom:5px ;">2020英雄联盟全明星赛</li>
+					<li style="color: #999999;">12月20日   12：00</li>
+				</ul></a>
+				<div >
+					<a href="">回放</a>
+				</div>
+			</div>
+			<div class="playback" >
+				<a href=""><ul>
+					<li class="first"><strong>LPL</strong><span>已结束</span></li>
+					<li style="margin-bottom:5px ;">2020英雄联盟全明星赛</li>
+					<li style="color: #999999;">12月20日   12：00</li>
+				</ul></a>
+				<div >
+					<a href="">回放</a>
+				</div>
+			</div>
+			<div class="playback" >
+				<a href=""><ul>
+					<li class="first"><strong>NFL橄榄球</strong><span>直播</span></li>
+					<li style="margin-bottom:5px ;">RedZone达阵区</li>
+					<li style="color: #999999;">12月20日   12：00</li>
+				</ul></a>
+				<div >
+					<a href="">回放</a>
+				</div>
+			</div>
+			<div class="playback" >
+				<a href=""><ul>
+					<li class="first"><strong>LPL</strong><span>已结束</span></li>
+					<li style="margin-bottom:5px ;">2020英雄联盟全明星赛</li>
+					<li style="color: #999999;">12月20日   12：00</li>
+				</ul></a>
+				<div >
+					<a href="">回放</a>
+				</div>
+			</div>
+				
+				<div class="playback" >
+				<a href=""><ul>
+					<li class="first"><strong>LPL</strong><span>已结束</span></li>
+					<li style="margin-bottom:5px ;">2020英雄联盟全明星赛</li>
+					<li style="color: #999999;">12月20日   12：00</li>
+				</ul></a>
+				<div >
+					<a href="">回放</a>
+				</div>
+			</div>
+			<div class="playback" >
+				<a href=""><ul>
+					<li class="first"><strong>LPL</strong><span>直播</span></li>
+					<li style="margin-bottom:5px ;">2020英雄联盟全明星赛</li>
+					<li style="color: #999999;">12月20日   12：00</li>
+				</ul></a>
+				<div >
+					<a href="">直播</a>
+				</div>
+			</div>
+			<div class="playback" >
+				<a href=""><ul>
+					<li class="first"><strong>LPL</strong><span>已结束</span></li>
+					<li style="margin-bottom:5px ;">2020英雄联盟全明星赛</li>
+					<li style="color: #999999;">12月20日   12：00</li>
+				</ul></a>
+				<div >
+					<a href="">回放</a>
+				</div>
+			</div>
+			<div class="playback" >
+				<a href=""><ul>
+					<li class="first"><strong>LPL</strong><span>已结束</span></li>
+					<li style="margin-bottom:5px ;">2020英雄联盟全明星赛</li>
+					<li style="color: #999999;">12月20日   12：00</li>
+				</ul></a>
+				<div >
+					<a href="">回放</a>
+				</div>
+			</div>
+			<div class="playback" >
+				<a href=""><ul>
+					<li class="first"><strong>LPL</strong><span>直播</span></li>
+					<li style="margin-bottom:5px ;">2020英雄联盟全明星赛</li>
+					<li style="color: #999999;">12月20日   12：00</li>
+				</ul></a>
+				<div >
+					<a href="">回放</a>
+				</div>
+			</div>
+					</div>
+					</div>
+					
+					
+				<div class="game_img">
+					<div class="">
+						<a href=""><img src="//mat1.gtimg.com/sports/logo/tongl.png"/></a>
+					</div>
+					<div class="">
+						<a href=""><img src="//mat1.gtimg.com/sports/index2015/images/qielogo.png"/></a>
+					</div>
+					
+				</div>	
+				<a href="" class="right">></a>
+			</div>
+		</div>	
+			<div class="middle">
+			<div class="middle_body">
+			<div class="text">
+			<ul>
+			<li><a href="" class="bold">正视频直播英超：热刺vs莱斯特 孙兴慜冲百球里程碑</a></li>
+			<li><a href="">深圳拒绝21分大逆转险胜广州 布克31分摩尔错失绝杀</a></li>
+			<li><a href="">薪金专家：林书豪仍有机会签约勇士 周一有最终结果</a></li>
+			<li><a href="">CBA-青岛多点开花力克北京取4连胜 亚当斯伤退方硕29＋8</a></li>
+			<li><a href="">戈贝尔拒续约后危矣？美媒建议送他入绿凯，获一首轮＋1790万交易...</a></li>
+			<li><a href="" class="bold">6.2秒！五大联赛史上最快进球诞生，米兰天才一战成名</a></li>
+			<li><a href="">6.2秒！五大联赛史上最快进球诞生，21岁天才炸裂全场，一战成名</a></li>
+			<li><a href="">有排面！《新闻联播》报道山东鲁能足协杯夺冠，江苏苏宁中超捧杯</a></li>
+			<li><a href="">哈登扎心吗？韦少离开他迅速找到“新欢”：跟比尔大笑热聊太开心</a></li>
+			<li><a href="" class="bold">湖人快船篮网雄鹿热火 哪队拥有联盟最强的五人组？</a></li>
+			<li><a href="">曾被周杰伦调侃！郭艾伦跨年晚会献唱《真心英雄》 直言：唱歌挺难</a></li>
+			<li><a href="">社交圈：湖人快船篮网雄鹿热火 哪队拥有联盟最强的五人组？</a></li>
+			<li><a href="">三球4场季前赛水平如何？传球篮板强，投篮不稳，天赋不比球哥差</a></li>
+			<li><a href="">拒绝走捷径，字母哥谈夺冠目标：这需要时间，乔丹季后赛也挣扎过</a></li>
+			<li><a href="">英超六强创造力分布图：热刺最差，利物浦曼城独一档！</a></li>
+			<li><a href="">赔偿3千万！中甲劲旅遭重创，西班牙名帅上告FIFA美女老总败诉</a></li>
+			<li><a href="">富力官宣阿德里安、日夫科维奇离队：感谢，后会有期！</a></li>
+			<li><a href="">2020年福州马拉松赛举行，尹顺金、杨花分获男女全马冠军</a></li>
+			<li><a href="">皇马机会来了！剑指5连胜 甩巴萨8分追平第1名？看本泽马的了！</a></li>
+			<li><a href="">曝申花王牌外援离队！不满4千万年薪要求翻倍，大V怒批他亚冠疑似摆..</a></li>
+			<li><a href="">替补登场36分钟遭换下！迷失自我的萨内，真的和拜仁八字不合吗？</a></li>
+			</ul>
+			</div>
+			<div class="middle_bodyright">
+				<div class="chart">
+					<div class="rotation_chart">
+						<div id="leftB"><a href=""><</a></div>
+						<div id="rightB"><a href="">></a></div>	
+						
+						<ul class="move">
+							<li>
+							<a href=""><img src="http://img1.gtimg.com/sports/pics/hv1/35/218/2325/151238750.jpg"/>
+							<span>正视频直播2020英雄联盟全明星	</span>
+							</a>
+							</li>
+							<li>
+							<a href=""><img src="http://img1.gtimg.com/sports/pics/hv1/155/213/2325/151237595.jpg"/>
+							<span>伞兵张虹不拼颜值比实力 “助攻”电竞出圈有秘籍	</span>
+							</a>
+							</li>
+							<li>
+							<a href=""><img src="http://img1.gtimg.com/sports/pics/hv1/63/212/2325/151237248.jpg"/>
+							<span>《企鹅小课堂》第1期 雪上HIP-HOP：单板滑雪	</span>
+							</a>
+							</li>
+							<li>
+							<a href=""><img src="http://img1.gtimg.com/sports/pics/hv1/120/144/2325/151219965.jpg"/>
+							<span>跑步达人都在听的宝藏运动歌单	</span>
+							</a>
+							</li>
+						</ul>
+						<ul class="point">
+							<li style="background:#008B8B ;"></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+					<div class="hot">
+						<div class="hot_body">
+							<a href=""><img src="http://mat1.gtimg.com/sports/sports/banner.png"/></a>
+						</div>
+					</div>
+					<div class="video">
+						<div class="">
+							<p style="background: #327FC6;padding: 3px 0px;"><span style="color: #B3DBFF;padding: 5px 2px;font-size: 12px;background:darkblue ;">热门</span><a href="" style="font-size: 12px; color: white;">&nbsp;&nbsp;&nbsp;&nbsp;快看这就是热门！</a></p>
+						</div>
+						<video src="img/m2.mp4" controls="controls" loop="loop" autoplay="autoplay" muted="muted" style="width: 198px; height: 135px;"></video>
+					</div>
+				</div>
+				
+				<div class="middle_bodyright_bottom">
+					<div class="good">
+						<h4>精彩视频</h4>
+						<div >
+						<a href="">热门全场集锦</a>
+						<a href="" style="border-left:1px solid silver ;border-right:1px solid silver ;">最热</a>
+						<a href="">NBA</a>
+						<a href="" style="border-left:1px solid silver ;border-right:1px solid silver ;">CBA</a>
+						<a href="">英超</a>
+						<a href="" style="border-left:1px solid silver ;border-right:1px solid silver ;">中超</a>
+						<a href="">欧冠</a>
+						<a href="" style="border-left:1px solid silver ;border-right:1px solid silver ;">综合</a>
+						<a href="">功夫</a>
+						</div>
+					</div>
+					<div class="videos">
+						<ul>
+							<li></li>
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+			
+			
+			</div>
+			</div>
+		<div class="pip">
+			<div class="">
+				<p>画中画在这里：对称之王！！！&nbsp;&nbsp;&nbsp;&nbsp;<a href=""><strong>x</strong></a></p>
+			</div>
+			<video src="img/m2.mp4" controls="controls" loop="loop" autoplay="autoplay" muted="muted" style="width: 360px; height: 260px;" ></video>
+		</div>
+		<script>
+//			$(".TVB").mouseover(function(){
+//				$(".TVB_bolick").css("display","block");
+//				if()
+//			})
+//			这是视频下的隐藏!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+			$(".TVB").hover(function(){
+				$(".TVB_bolick").css("display","block");
+			},function(){
+				$(".TVB_bolick").css("display","none");
+			})
+			$(".TVB_bolick").mouseover(function(){
+				$(".TVB_bolick").css("display","block");
+			})
+			$(".TVB_bolick").mouseout(function(){
+				$(".TVB_bolick").css("display","none");
+			})
+//			$(".game>.game_body>.left").click(function(){
+//				$(".game>.game_body>.over>.big")
+//			})
+//			这是赛事！！！！！！！！！！！！！！！
+			$(".game>.game_body>.right").click(function(event){
+				event.preventDefault();
+			})
+			$(".game>.game_body>.left").click(function(event){
+				event.preventDefault();
+			})
+			var i=0;
+			$(".game>.game_body>.right").click(function(){
+				i++;
+				if(i<3){
+					$(".game>.game_body>.over>.big").animate({"margin-left":-i*1060+"px"},800);
+				}else{
+					i=2;
+				}
+				})
+			
+			$(".game>.game_body>.left").click(function(){
+				i--;
+				if(i==-1){
+					i=2;
+				}
+					$(".game>.game_body>.over>.big").animate({"margin-left":-i*1060+"px"},800);
+
+				})
+			var span=$(".game>.game_body>.over>.big>.playback>a>ul>.first>span");
+			if($(".game>.game_body>.over>.big>.playback>a>ul>.first>span").html()=="已结束"){
+				$(".game>.game_body>.over>.big>.playback>a>ul>.first>span").css("color","#f15b5b");
+			}
+//			console.log($(".game>.game_body>.over>.big>.playback>a>ul>.first>span")); 
+//			console.log($(span).html());
+			/**
+			 * 这是轮播图！！！！！！！！！！！！！！！！！！！！！！
+			 */
+			var j=0
+			
+			var timer=setInterval(function(){
+				j++;
+				if(j==4){
+					j=0;
+				}
+				$(".middle>.middle_body>.middle_bodyright>.chart>.rotation_chart>.move").animate({"margin-left":-528*j+"px"},3000);
+				$(".middle>.middle_body>.middle_bodyright>.chart>.rotation_chart>.point>li").eq(j).css("background","#008B8B").siblings().css("background","white");
+			},3000)
+			$(".middle>.middle_body>.middle_bodyright>.chart>.rotation_chart").mouseover(function(){
+				clearInterval(timer);
+			})
+			$(".middle>.middle_body>.middle_bodyright>.chart>.rotation_chart").mouseout(function(){
+				timer=setInterval(function(){
+				j++;
+				if(j==4){
+					j=0;
+				}
+				$(".middle>.middle_body>.middle_bodyright>.chart>.rotation_chart>.move").animate({"margin-left":-528*j+"px"},3000);
+				$(".middle>.middle_body>.middle_bodyright>.chart>.rotation_chart>.point>li").eq(j).css("background","#008B8B").siblings().css("background","white");
+			},3000)
+			})
+			$("#leftB").click(function(event){
+				event.preventDefault();
+			})
+			$("#rightB").click(function(event){
+				event.preventDefault();
+			})
+			$("#leftB").click(function(){
+				i--;
+				if(i==-1){
+					i=3;
+				}
+				$(".middle>.middle_body>.middle_bodyright>.chart>.rotation_chart>.move").animate({"margin-left":-528*i+"px"},2000);
+				$(".middle>.middle_body>.middle_bodyright>.chart>.rotation_chart>.point>li").eq(i).css("background","#008B8B").siblings().css("background","white");
+			})
+			$("#rightB").click(function(){
+				i++;
+				if(i==4){
+					i=0;
+				}
+				$(".middle>.middle_body>.middle_bodyright>.chart>.rotation_chart>.move").animate({"margin-left":-528*i+"px"},2000);
+				$(".middle>.middle_body>.middle_bodyright>.chart>.rotation_chart>.point>li").eq(i).css("background","#008B8B").siblings().css("background","white");
+			})
+//			关闭画中画!!!!!!!!!!!!!!!!
+			$(".pip>div>p>a>strong").click(function(event){
+				event.preventDefault();
+			})
+			$(".pip>div>p>a>strong").click(function(){
+				$(".pip").remove();
+			})
+//			滚轮事件!!!!!!!
+			$(window).scroll(function(){
+//				当前滚动高度
+//				console.log($(window).scrollTop());
+				if($(window).scrollTop()>700){
+					$(".pip").show();
+				}else{
+					$(".pip").hide();
+				}
+			})
+		</script>
+	</body>
+</html>
